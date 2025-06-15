@@ -14,15 +14,12 @@
 
 }
 .datadiv{
-  /* border: 2px solid black; */
+
   height: 350px;
   width:300px;
   margin-top: 10px;
   box-shadow: 0 0 3px black;
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* align-items: center; */
-  /* justify-content: center; */
+
   
 }
 

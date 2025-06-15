@@ -24,8 +24,9 @@ async function countryData() {
     `;
       container.appendChild(datadiv);
     });
-  } catch (error) {
-    console.error("Getting error to fetch data");
+  } 
+  catch (error) {
+    console.error("Getting error to fetch data",error);
   }
 }
 
@@ -33,17 +34,19 @@ countryData();
 const themechange = document.getElementById("themeToggle");
 let dark = false;
 const container3 = document.querySelector(".container");
-
+const navbar = document.querySelector(".navbar");
 themechange.addEventListener("click", () => {
   if (dark === false) {
     container3.style.backgroundColor = "black";
     container3.style.color = "white";
     themechange.innerHTML = "☀️";
+    navbar.style.color = "white";
     dark = true;
   } else {
     container3.style.backgroundColor = "white";
     container3.style.color = "black";
     themechange.innerHTML = "🌙";
+    navbar.style.color = "";
     dark = false;
   }
 });
